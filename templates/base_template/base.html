@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    {% include './head.html' %}
+    <title> {% block title %} Python Academy | {% endblock %} </title>
+    <body>
+        {% include './header.html' %}
+        {% block content %} {% endblock %}
+        {% include './foot_banner.html' %}
+        {% include './footer.html' %} 
+    </body>
+    <!--====== Javascripts & Jquery ======-->
+	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/mixitup.min.js' %}"></script>
+	<script src="{% static 'js/circle-progress.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+    <!-- mycomponent -->
+    <script src="{% static 'modal/Login/loginjs.js' %}"></script>
+</html>  
